@@ -723,7 +723,7 @@ section {
   font-size: 13px;
   display: inline-flex;
   align-items: center;
-  border: 2px solid #000;
+  border: 2px solid #fff;
 }
 
 .about .content .about-btn i {
