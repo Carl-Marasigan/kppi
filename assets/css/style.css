@@ -2326,7 +2326,7 @@ section {
   top: 0;
   right: -1px;
   bottom: 0;
-  border: 0;
+  border-color: #fff;
   background: none;
   font-size: 16px;
   padding: 0 20px;
