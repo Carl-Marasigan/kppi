@@ -665,7 +665,7 @@ section {
 --------------------------------------------------------------*/
 .clients .clients-carousel,
 .clients .clients-slider {
-  overflow: overflow;
+  overflow: visible;
 }
 
 .clients {
@@ -1243,7 +1243,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
-  overflow: overflow;
+  overflow: visible;
 }
 
 .testimonials .testimonial-item {
