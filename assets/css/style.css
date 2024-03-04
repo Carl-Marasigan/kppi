@@ -664,14 +664,14 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .swiper-pagination {
-  margin-top: 4%;
-  position: relative;
+.clients {
+  padding-top: 20px; /* Adjust as needed */
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+  margin-bottom: -15px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #0c0e4c;
@@ -680,18 +680,15 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0c0e4c;
 }
-
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
 }
-
 .clients .swiper-slide img:hover {
   opacity: 1;
   filter: none;
 }
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
