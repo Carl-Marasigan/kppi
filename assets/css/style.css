@@ -664,6 +664,10 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients {
+  padding-top: 20px; /* Adjust as needed */
+}
+
 .clients .swiper-pagination {
   margin-top: 4%;
   position: relative;
@@ -672,6 +676,7 @@ section {
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+  margin-bottom: -15px;
   background-color: #fff;
   opacity: 1;
   border: 1px solid #0c0e4c;
