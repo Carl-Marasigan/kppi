@@ -178,7 +178,7 @@ body {
     height: 120vh;
   }
 }
-
+/* CSR */
 .hero {
   background: #F5F3F4;
   width: 100%;
@@ -225,6 +225,7 @@ body {
 .hero span a:hover {
   color: #0c0e4c;
 }
+/*end of csr*/
 
 .carousel,
 .item,
