@@ -663,7 +663,7 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients .swiper-pagination {
-  margin-top: 4%;
+  margin-top: 2%;
   position: relative;
 }
 
@@ -1252,7 +1252,7 @@ section {
   border: 6px solid #fff;
   float: left;
   margin: 0 10px 0 0;
-  background-color: transparent;
+  
 }
 
 .testimonials .testimonial-item h3 {
