@@ -670,6 +670,7 @@ section {
   margin-top: 20px;
   position: relative;
 }
+
 .clients .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
@@ -677,6 +678,11 @@ section {
   background-color: #fff;
   opacity: 1;
   border: 1px solid #0c0e4c;
+
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0c0e4c;
 }
 
 .clients .swiper-slide img {
@@ -684,10 +690,12 @@ section {
   transition: 0.3s;
   filter: grayscale(100);
 }
+
 .clients .swiper-slide img:hover {
   opacity: 1;
   filter: none;
 }
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
