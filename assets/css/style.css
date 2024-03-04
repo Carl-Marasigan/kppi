@@ -1234,6 +1234,10 @@ section {
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
+.testimonials .testimonial-item:hover {
+  background-color: transparent !important; /* Reset the background color to its default */
+}
+
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
