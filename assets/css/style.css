@@ -236,6 +236,8 @@ body {
 .carousel-inner {
   height: 100%;
   background: #000;
+  -webkit-animation-duration: 0.2s; /* Change animation duration */
+  animation-duration: 0.2s; /* Change animation duration */
 }
 
 .carousel-indicators li {
