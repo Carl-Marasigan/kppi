@@ -662,9 +662,14 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .clients .swiper-pagination {
   margin-top: 4%;
-  position: absolute;
+  position: relative;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet {
