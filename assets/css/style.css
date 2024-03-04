@@ -663,6 +663,11 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients .clients-carousel,
+.clients .clients-slider {
+  overflow: overflow;
+}
+
 .clients {
   padding-top: 20px; /* Adjust as needed */
 }
@@ -1238,7 +1243,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
-  overflow: hidden;
+  overflow: overflow;
 }
 
 .testimonials .testimonial-item {
