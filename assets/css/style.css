@@ -294,8 +294,8 @@ p{padding:10px}
  * Change animation duration
  */
 .animated {
-  -webkit-animation-duration: 1.0s;
-  animation-duration: 1.0s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fadeInRight {
