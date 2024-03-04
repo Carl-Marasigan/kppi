@@ -663,6 +663,22 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #0c0e4c;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #0c0e4c;
+}
 .clients {
   padding-top: 20px; /* Adjust as needed */
 }
@@ -676,9 +692,7 @@ section {
   border: 1px solid #0c0e4c;
 }
 
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0c0e4c;
-}
+
 .clients .swiper-slide img {
   opacity: 0.5;
   transition: 0.3s;
