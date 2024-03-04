@@ -1234,10 +1234,6 @@ section {
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
-.testimonials .testimonial-item:hover {
-  background-color: transparent !important; /* Reset the background color to its default */
-}
-
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -1256,6 +1252,7 @@ section {
   border: 6px solid #fff;
   float: left;
   margin: 0 10px 0 0;
+  background-color: transparent;
 }
 
 .testimonials .testimonial-item h3 {
