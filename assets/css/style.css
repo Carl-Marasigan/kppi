@@ -230,6 +230,7 @@ body {
 .item,
 .active {
     height: 100%;
+    transition: 0.3s
 }
 
 .carousel-inner {
@@ -296,6 +297,7 @@ p{padding:10px}
 .animated {
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
+  
 }
 
 @-webkit-keyframes fadeInRight {
