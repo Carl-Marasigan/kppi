@@ -238,8 +238,8 @@ body {
   background: #000;
 
 }
-.carousel-inner .item active{
-  transition: background-image 0.2s ease-in-out;
+.carousel-inner .item .active{
+  transition: background-image 0.3s ease-in-out;
 }
 
 .carousel-indicators li {
