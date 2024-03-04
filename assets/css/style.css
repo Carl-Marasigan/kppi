@@ -663,10 +663,6 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
-.clients .clients-carousel,
-.clients .clients-slider {
-  overflow: visible;
-}
 
 .clients {
   padding-top: 20px; /* Adjust as needed */
