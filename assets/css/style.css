@@ -236,8 +236,10 @@ body {
 .carousel-inner {
   height: 100%;
   background: #000;
-  -webkit-animation-duration: 0.2s; /* Change animation duration */
-  animation-duration: 0.2s; /* Change animation duration */
+
+}
+.carousel-inner .item {
+  transition: background-image 0.2s ease-in-out;
 }
 
 .carousel-indicators li {
