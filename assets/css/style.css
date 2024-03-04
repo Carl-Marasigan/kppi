@@ -664,7 +664,7 @@ section {
 --------------------------------------------------------------*/
 .clients .swiper-pagination {
   margin-top: 4%;
-  position: relative;
+  position: absolute;
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet {
