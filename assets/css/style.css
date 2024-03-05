@@ -2252,8 +2252,9 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #000;
-  font-size: 50px;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
   background: #000;
 }
 
