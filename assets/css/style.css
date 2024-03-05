@@ -954,7 +954,7 @@ section {
 
 .tabs .nav-link {
   border: 1px solid #c0c0c0;
-  padding: 15px;
+  padding-top: 10px;
   transition: 0.3s;
   color: #111111;
   border-radius: 0;
@@ -1004,7 +1004,7 @@ section {
 }
 
 .tabs .tab-content {
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .tabs .tab-pane h3 {
