@@ -1274,7 +1274,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
-  overflow: visible;
+  overflow: hidden;
 }
 
 .testimonials .testimonial-item {
