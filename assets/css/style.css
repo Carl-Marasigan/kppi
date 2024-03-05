@@ -1005,7 +1005,7 @@ section {
 
 .tabs .tab-content {
   margin-top: 10px;
-  justify-content: justify;
+  padding-top: 20px;
 }
 
 .tabs .tab-pane h3 {
