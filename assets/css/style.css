@@ -950,7 +950,6 @@ section {
 --------------------------------------------------------------*/
 .tabs .nav-tabs {
   border: 0;
-  padding-top: 20px;
 }
 
 .tabs .nav-link {
@@ -1006,6 +1005,7 @@ section {
 
 .tabs .tab-content {
   margin-top: 10px;
+  padding-top: 20px;
 }
 
 .tabs .tab-pane h3 {
