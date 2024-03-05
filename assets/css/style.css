@@ -1005,7 +1005,7 @@ section {
 
 .tabs .tab-content {
   margin-top: 10px;
-  padding-top: 20px;
+  text-align: left;
 }
 
 .tabs .tab-pane h3 {
