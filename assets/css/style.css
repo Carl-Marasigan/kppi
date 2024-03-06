@@ -818,7 +818,6 @@ section {
   background-size: cover;
   padding: 60px 0 30px 0;
   position: relative;
-  
 }
 
 .affiliates::before {
@@ -838,7 +837,9 @@ section {
   z-index: 10;
 }
 
-.affiliates .card {
+.affiliates .card .card img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
   border-radius: 3px;
   border: 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
