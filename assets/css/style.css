@@ -813,7 +813,7 @@ section {
   }
 }
 /* start from here #superflex css */ 
-.about-boxes {
+.affiliates {
   background: url("") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 30px 0;
@@ -821,7 +821,7 @@ section {
   
 }
 
-.about-boxes::before {
+.affiliates::before {
   content: "";
   position: absolute;
   left: 0;
@@ -832,25 +832,25 @@ section {
   z-index: 9;
 }
 
-.about-boxes .container,
-.about-boxes .container-fluid {
+.affiliates .container,
+.affiliates .container-fluid {
   position: relative;
   z-index: 10;
 }
 
-.about-boxes .card {
+.affiliates .card {
   border-radius: 3px;
   border: 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
-.about-boxes .card-icon {
+.affiliates .card-icon {
   text-align: center;
   margin-top: -32px;
 }
 
-.about-boxes .card-icon i {
+.affiliates .card-icon i {
   font-size: 32px;
   color: #fff;
   width: 64px;
@@ -864,34 +864,34 @@ section {
   display: inline-block;
 }
 
-.about-boxes .card-body {
+.affiliates .card-body {
   padding-top: 12px;
 }
 
-.about-boxes .card-title {
+.affiliates .card-title {
   font-weight: 700;
   text-align: center;
 }
 
-.about-boxes .card-title a {
+.affiliates .card-title a {
   color: #15222b;
 }
 
-.about-boxes .card-title a:hover {
+.affiliates .card-title a:hover {
   color: #0c0e4c;
 }
 
-.about-boxes .card-text {
+.affiliates .card-text {
   color: #5e5e5e;
 }
 
-.about-boxes .card:hover .card-icon i {
+.affiliates .card:hover .card-icon i {
   background: #fff;
   color: #0c0e4c;
 }
 
 @media (max-width: 1024px) {
-  .about-boxes {
+  .affiliates {
     background-attachment: scroll;
   }
 }
