@@ -837,13 +837,17 @@ section {
   z-index: 10;
 }
 
-.affiliates .card .card img {
-  max-width: 100%; /* Make the image responsive */
-  height: auto; /* Maintain aspect ratio */
+.affiliates .card {
   border-radius: 3px;
   border: 0;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
+}
+
+.affiliates .card img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure proper rendering of image */
 }
 
 .affiliates .card-icon {
