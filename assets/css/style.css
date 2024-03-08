@@ -732,6 +732,11 @@ section {
   filter: none;
 }
 
+.clients ..swiper-img {
+    width: 100%; /* Set image width to fill the slider container */
+    height: auto; /* Ensure the image maintains its aspect ratio */
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
