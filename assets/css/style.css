@@ -836,7 +836,7 @@ affiliates .affiliates-wrap {
   height: 200px;
   position: relative;
   border-radius: 10px 10px 10 10;
-  border: -100px solid #fff;
+  border-line: 10px solid #fff;
   margin: 0;
 }
 
