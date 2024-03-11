@@ -834,12 +834,12 @@ affiliates .affiliates-wrap {
   overflow: hidden;
   height: 200px;
   position: relative;
-  border-radius: 10px 4px 0 0;
+  border-radius: 4px 4px 0 0;
   margin: 0;
 }
 
 .affiliates .affiliates-item figure:hover img {
-  opacity: 0.4;
+  opacity: 1;
   transition: 0.3s;
 }
 
