@@ -876,7 +876,7 @@ section {
 }
 
 #affiliates .affiliates-item figure .link-preview {
-  left: calc(50% - 38px);
+  center: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
