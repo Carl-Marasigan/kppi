@@ -725,7 +725,11 @@ section {
   opacity: 0.5;
   transition: 0.3s;
   filter: grayscale(100);
+  /* Adjust the width and height as needed */
+  width: 150px; /* Example width */
+  height: 60px; /* Automatically adjust height to maintain aspect ratio */
 }
+
 
 .clients .swiper-slide img:hover {
   opacity: 1;
