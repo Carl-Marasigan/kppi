@@ -875,7 +875,7 @@ affiliates .affiliates-wrap {
 }
 
 .affiliates .affiliates-item figure .link-preview {
-  center: calc(100% - 100px);
+  center: calc(150% - 150px);
   top: calc(50% - 18px);
 }
 
