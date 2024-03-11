@@ -834,7 +834,7 @@ affiliates .affiliates-wrap {
   overflow: hidden;
   height: 200px;
   position: relative;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 10 10;
   margin: 0;
 }
 
@@ -847,7 +847,7 @@ affiliates .affiliates-wrap {
 .affiliates .affiliates-item figure .link-details {
   position: absolute;
   display: inline-block;
-  opacity: 0;
+  opacity: 1;
   line-height: 1;
   text-align: center;
   width: 50px;
