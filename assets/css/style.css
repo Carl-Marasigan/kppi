@@ -885,7 +885,7 @@ affiliates .affiliates-wrap {
 
 .affiliates .affiliates-item figure:hover .link-preview {
   opacity: 1;
-  right: calc(50% - 50px);
+  right: calc(50% - 30px);
 }
 
 .affiliates .affiliates-item figure:hover .link-details {
