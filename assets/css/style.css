@@ -878,6 +878,10 @@ affiliates .affiliates-wrap {
   center: calc(150% - 150px);
   top: calc(50% - 18px);
 }
+.affiliates .affiliates-item figure .link-details {
+  center: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
 
 .affiliates .affiliates-item figure:hover .link-preview {
   opacity: 1;
@@ -886,7 +890,7 @@ affiliates .affiliates-wrap {
 
 .affiliates .affiliates-item figure:hover .link-details {
   opacity: 1;
-  right: calc(50% - 44px);
+  center: calc(50% - 44px);
 }
 
 .affiliates .affiliates-item .affiliates-info {
