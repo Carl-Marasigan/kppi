@@ -832,9 +832,9 @@ affiliates .affiliates-wrap {
 .affiliates .affiliates-item figure {
   background: #fff;
   overflow: hidden;
-  height: 50px;
+  height: 200px;
   position: relative;
-  border-radius: 4px 4px 0 0;
+  border-radius: 10px 4px 0 0;
   margin: 0;
 }
 
