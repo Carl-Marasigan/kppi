@@ -227,12 +227,7 @@ body {
 }
 /*end of csr*/
 
-.carousel,
-.item,
-.active {
-    height: 100%;
-}
-
+/* start of the carousel css */
 html,
 body {
     height: 100%;
@@ -266,8 +261,6 @@ p{padding:10px}
     -o-background-size: cover;
     opacity:0.6;
 }
-
-
 
 
 /**
