@@ -233,62 +233,27 @@ body {
     height: 100%;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
 .carousel-inner {
   height: 100%;
   background: #000;
-
-}
-
-.carousel-indicators li {
-  margin: 0 5px 5px 5px; /* Add margin between indicators */
-  width: 10px; /* Adjust width as needed */
-  height: 10px; /* Adjust height as needed **/
-  background-color: transparent; /** Indicator color */
-  border-radius: 100%; /** Make the indicators circular */
-}
-.carousel-inner {
-height: 100%;
 }
 
 .carousel-caption{padding-bottom:80px;}
 
-h2{font-size: 50px;}
+h2{font-size: 60px;}
 p{padding:10px}
 
-@-webkit-keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100px, 0, 0);
-    transform: translate3d(100px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(100px, 0, 0);
-    transform: translate3d(100px, 0, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
-.fadeInRight {
-  -webkit-animation-name: fadeInRight;
-  animation-name: fadeInRight;
-  -webkit-animation-duration: 0.2s; /* Change animation duration */
-  animation-duration: 0.2s; /* Change animation duration */
-}
-
-/*END OF TRANSITION*/
 /* Background images are set within the HTML using inline CSS, not here */
 
 .fill {
@@ -302,6 +267,9 @@ p{padding:10px}
     opacity:0.6;
 }
 
+
+
+
 /**
  * Button
  */
@@ -311,27 +279,24 @@ p{padding:10px}
   border: 2px solid #fff;
 }
 .btn-transparent:hover {
-  background-color: #0c0e4c;
-  color: #fff;
-  border: 2px solid #fff;
+  background-color: #fff;
 }
 
 .btn-rounded {
-  border-radius: 90px;
+  border-radius: 70px;
 }
 
 .btn-large {
-  padding: 12px 55px;
-  font-size: 15px;
+  padding: 11px 45px;
+  font-size: 18px;
 }
 
 /**
  * Change animation duration
  */
 .animated {
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fadeInRight {
@@ -361,13 +326,12 @@ p{padding:10px}
     transform: none;
   }
 }
+
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
-/*
-END OF CAROUSEL!!!!!!!!!!
-*/
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
