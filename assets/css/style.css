@@ -773,6 +773,34 @@ section {
     text-align: center;
   }
 }
+
+/* CSS FOR LOCAL AFFILIATES */
+.container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-overlay {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5); /* Optional: add background color */
+  padding: 10px; /* Optional: add padding */
+}
+
+.text-overlay1 {
+  top: 10%;
+  left: 60%;
+  transform: translateX(100%);
+}
+
+.text-overlay2 {
+  top: 28%;
+  right: 20%;
+
+ 
+  transform: translateX(70%);
+}
+/* CSS FOR LOCAL AFFILIATES */
+
 /* start from here #superflex css */ 
 /* Affiliates Section
 --------------------------------*/
