@@ -774,6 +774,166 @@ section {
   }
 }
 /* start from here #superflex css */ 
+/* Affiliates Section
+--------------------------------*/
+
+#affiliates {
+  padding: 60px 0;
+}
+
+#affiliates #affiliates-flters {
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#affiliates #affiliates-flters li {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border-radius: 4px;
+  text-transform: uppercase;
+  background: #fff;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#affiliates #affiliates-flters li:hover,
+#affiliates #affiliates-flters li.filter-active {
+  background: #152b90;
+  color: #fff;
+}
+
+#affiliates #affiliates-flters li:last-child {
+  margin-right: 0;
+}
+
+#affiliates .affiliates-wrap {
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+#affiliates .affiliates-wrap:hover {
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+}
+
+#affiliates .affiliates-item {
+  position: relative;
+  height: 360px;
+  overflow: hidden;
+}
+
+#affiliates .affiliates-item figure {
+  background: #fff;
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+#affiliates .affiliates-item figure:hover img {
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+#affiliates .affiliates-item figure .link-preview,
+#affiliates .affiliates-item figure .link-details {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  line-height: 0;
+  text-align: center;
+  width: 40px;
+  height: 39px;
+  background: #fff;
+  border-radius: 35%;
+  transition: 0.2s linear;
+}
+
+.affiliates .affiliates-item figure {
+  position: relative;
+  /* Add other figure styles */
+}
+
+.affiliates .affiliates-item figure .link-preview i,
+.affiliates .affiliates-item figure .link-details i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-top: 0px;
+  font-size: 29px;
+  color: #152b90;
+}
+
+#affiliates .affiliates-item figure .link-preview:hover,
+#affiliates .affiliates-item figure .link-details:hover {
+  background:  #152b90;
+}
+
+#affiliates .affiliates-item figure .link-preview:hover i,
+#affiliates .affiliates-item figure .link-details:hover i {
+  color: #fff;
+}
+
+#affiliates .affiliates-item figure .link-preview {
+  left: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#affiliates .affiliates-item figure .link-details {
+  right: calc(50% - 38px);
+  top: calc(50% - 18px);
+}
+
+#affiliates .affiliates-item figure:hover .link-preview {
+  opacity: 1;
+  left: calc(50% - 44px);
+}
+
+#affiliates .affiliates-item figure:hover .link-details {
+  opacity: 1;
+  right: calc(50% - 44px);
+}
+
+#affiliates .affiliates-item .affiliates-info {
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+
+#affiliates .affiliates-item .affiliates-info h4 {
+  font-size: 18px;
+  line-height: 1px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  padding-bottom: 0;
+}
+
+#affiliates .affiliates-item .affiliates-info h4 a {
+  color: #000;
+}
+
+#affiliates .affiliates-item .affiliates-info h4 a:hover {
+  color: #152b90;
+}
+
+#affiliates .affiliates-item .affiliates-info p {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
 /*--------------------------------------------------------------
 # Counts
