@@ -774,7 +774,7 @@ section {
   }
 }
 
-/* CSS FOR LOCAL AFFILIATES */
+/* CSS FOR LOCAL AFFILIATES
 .container {
   position: relative;
   display: inline-block;
@@ -782,8 +782,8 @@ section {
 
 .text-overlay {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.5); /* Optional: add background color */
-  padding: 10px; /* Optional: add padding */
+  background-color: rgba(255, 255, 255, 0.5); 
+  padding: 10px; 
 }
 
 .text-overlay1 {
@@ -799,6 +799,7 @@ section {
  
   transform: translateX(70%);
 }
+*/
 /* CSS FOR LOCAL AFFILIATES */
 
 /* start from here #superflex css */ 
