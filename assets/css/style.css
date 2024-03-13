@@ -802,6 +802,19 @@ section {
 */
 /* CSS FOR LOCAL AFFILIATES */
 
+/* local affliates, ccs */
+
+.background-image {
+  background-image: url('assets/img/KP MAPS/LA.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Optionally, you can set a height and width for the div to ensure it's visible */
+  height: 300px; /* Adjust as needed */
+  width: 300px; /* Adjust as needed */
+}
+
+
+
 /* start from here #superflex css */ 
 /* Affiliates Section
 --------------------------------*/
