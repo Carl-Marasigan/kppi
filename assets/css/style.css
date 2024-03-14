@@ -774,44 +774,84 @@ section {
   }
 }
 
-/* CSS FOR LOCAL AFFILIATES
-.container {
-  position: relative;
-  display: inline-block;
-}
+/* CSS FOR KP MAPS TEXT OVERLAY */
 
 .text-overlay {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.5); 
-  padding: 10px; 
+  background-color: transparent; /* Optional: add background color */
+  padding: 0px; /* Optional: add padding */
 }
 
 .text-overlay1 {
-  top: 10%;
-  left: 60%;
-  transform: translateX(100%);
+  top: -380px; /* Adjust as needed */
+  left: -570px; /* Adjust as needed */
+  right: -900px;
 }
 
 .text-overlay2 {
-  top: 28%;
-  right: 20%;
+  top: -220px; /* Adjust as needed */
+  left: -230px; /* Adjust as needed */
+  right: -770px;
+}
 
+.text-overlay3 {
+  top: 20px; /* Adjust as needed */
+  left: -120px; /* Adjust as needed */
+  right: -810px;
+}
+
+.text-overlay4 {
+  top: 180px; /* Adjust as needed */
+  left: -170px; /* Adjust as needed */
+  right: -810px;
+}
+.text-overlay5 {
+  top: -240px; /* Adjust as needed */
+  left: -1200px; /* Adjust as needed */
+  right: -20px;
+}
+
+.text-overlay6 {
+  top: -70px; /* Adjust as needed */
+  left: -1200px; /* Adjust as needed */
+  right: -5px;
+}
+
+.text-overlay7 {
+  top: 100px; /* Adjust as needed */
+  left: -1200px; /* Adjust as needed */
+  right: -5px;
+}
+.text-overlay8 {
+  top: -117px; /* Adjust as needed JAPAN*/
+  left: 270px; /* Adjust as needed */
+
+}
+
+.text-overlay9 {
+  top: 39px; /* Adjust as needed VIETNAM */
+  left: 0px; /* Adjust as needed */
  
-  transform: translateX(70%);
 }
-*/
-/* CSS FOR LOCAL AFFILIATES */
 
-/* local affliates, ccs */
-
-.background-image {
-  background-image: url('assets/img/KP MAPS/LA.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* Optionally, you can set a height and width for the div to ensure it's visible */
-  height: 300px; /* Adjust as needed */
-  width: 300px; /* Adjust as needed */
+.text-overlay10 {
+  top: 601px; /* Adjust as needed HONGKONG*/
+  left: 780px; /* Adjust as needed */
+ 
 }
+
+.text-overlay11 {
+  top: 817px; /* Adjust as needed INDONESIA */
+  left: 750px; /* Adjust as needed */
+
+}
+.text-overlay12 {
+  top: 825px; /* Adjust as needed THAILAND*/
+  left: 190px; /* Adjust as needed */
+
+}
+
 
 
 
