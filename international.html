@@ -17,13 +17,10 @@
  </section>
 <style>
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     position: relative;
     width: 100%;
     height: 930px; /* Adjust the height of the container */
-    background-image: url('assets/img/KP MAPS/IA.png'); /* Relative file path */
+    background-image: url(''); /* Relative file path */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,62 +28,98 @@
 
   .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  /* You can style your content here */
-  .content h1 {
-    color: white;
-    font-size: 36px;
-  }
-  .text-overlay:hover .tooltip {
-    display: block;
+  .content img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .tooltip {
     display: none;
     position: absolute;
-    top: -30%;
-    left: 60%;
-    transform: translateX(-50%);
-    background-color: transparent;
+    top: 50%;
+    left: 70%;
+    transform: translate(-10px, -50%);
+    background-color: transparent; /* Adjust background color and opacity */
     color: #000;
     padding: 5px;
     border-radius: 5px;
     white-space: nowrap;
+    z-index: 999; /* Ensure tooltip is above other elements */
   }
+
   .tooltip img {
-    max-width: 100px; /* Adjust the maximum width of the image */
+    max-width: 300px; /* Adjust the maximum width of the image */
     height: auto;
   }
-  
+
+  area:hover + .tooltip {
+    display: block;
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
   <div class="content">
-    
-  
- <div class="text-overlay text-overlay8">JAPAN
-        <span class="tooltip"><img src="https://images3.alphacoders.com/103/thumb-1920-1030113.png" alt="Image"><br><img src="assets/img/branch/kpjp.png" alt="Image">Kanepackage Co.<br><img src="assets/img/branch/sanko.jpg" alt="Image">Sanko Manufacturing<br><img src="assets/img/branch/koushin.png" alt="Image">Koushin Industries </span>
-    </div>
-    <div class="text-overlay text-overlay9">VIETNAM
-        <span class="tooltip"><img src="https://static.vecteezy.com/system/resources/previews/001/228/859/original/vietnam-3d-flag-with-folds-vector.jpg" alt="Image"></span></div>
-    </div>
-    <div class="text-overlay text-overlay10">HONGKONG
-        <span class="tooltip"><img src="https://static.vecteezy.com/system/resources/previews/001/228/863/original/hong-kong-3d-flag-vector.jpg" alt="Image"></span></div>
-    </div>
-        <div class="text-overlay text-overlay11">INDONESIA
-            <span class="tooltip"><img src="https://th.bing.com/th/id/OIP.3Jj8P7K6Sr8s8vyOd2BMKQHaEK?rs=1&pid=ImgDetMain" alt="Image"></span></div>
+    <img src="assets/img/KP MAPS/test.png" usemap="#image-map">
+    <map name="image-map">
+      <area target="_blank" alt="Japan" title="Japan" href="" coords="538,224,625,279" shape="rect">
+      <div class="tooltip">
+        <img src="assets/img/branch/kpjp.png" alt="Image">
+        <p>Kanepackage Co.</p>
+        <img src="assets/img/branch/sanko.jpg" alt="Image">
+        <p>Sanko Manufacturing</p>
+        <img src="assets/img/branch/koushin.png" alt="Image">
+        <p>Koushin Industries</p>
+      </div>
+      <div class="tooltip-container" title="Vietnam">
+        <area target="_blank" alt="Vietnam" title="Vietnam" href="" coords="418,284,503,338" shape="rect">
+        <div class="tooltip">
+          <img src="http://www.kp-grp.com/img/kpg/kane-viet-1.png " alt="Image">
+          <p>Kanepackage Vietnam</p>
+          <p></p>
+          <p</p>
         </div>
-        <div class="text-overlay text-overlay12">THAILAND
-            <span class="tooltip"><img src="https://htj.tax/wp-content/uploads/THAILAND-FLAG.jpg" alt="Image"></span></div>
+      </div>
+      <div class="tooltip-container" title="Indonesia">
+        <area target="_blank" alt="Indonesia" title="Indonesia" href="" coords="533,345,617,397" shape="rect">
+        <div class="tooltip">
+          <img src="http://www.kp-grp.com/img/kpg/kane-indo.jpg" alt="Image">
+          <p>Kanepackage Indonesia</p>
+          <p></p>
+          <p</p>
         </div>
-      
+      </div>
+      <div class="tooltip-container" title="Hong Kong">
+        <area target="_blank" alt="Hong Kong" title="Hong Kong" href="" coords="390,401,477,454" shape="rect">
+        <div class="tooltip">
+          <img src="" alt="Image">
+          <p>Kanepackage Hong Kong</p>
+          <p></p>
+          <p</p>
+        </div>
+      </div>
+      <div class="tooltip-container" title="Thailand">
+        <area target="_blank" alt="Thailand" title="Thailand" href="" coords="29,432,121,496" shape="rect">
+        <div class="tooltip">
+          <img src="http://www.kp-grp.com/img/kpg/kane-thailand.jpg" alt="Image">
+          <p>Kanepackage Thailand</p>
+          <p></p>
+          <p</p>
+        </div>
+      </div>
+    </map>
+  </div>
+</div>
 
 
 </body>
