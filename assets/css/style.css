@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #0c0e4c;
 }
 
 a {
@@ -71,7 +71,7 @@ h6 {
 --------------------------------------------------------------*/
 .get-started-btn {
   margin-left: 30px;
-  background: #c0c0c0;
+  background: #0c0e4c;
   color: #0c0e4c;
   border-radius: 4px;
   padding: 8px 25px;
@@ -225,6 +225,7 @@ body {
   color: #0c0e4c;
 }
 /*end of csr*/
+
 
 /* start of the carousel css */
 html,
@@ -688,7 +689,7 @@ section {
   filter: none;
 }
 
-.clients ..swiper-img {
+.clients .swiper-img {
     width: 100%; /* Set image width to fill the slider container */
     height: auto; /* Ensure the image maintains its aspect ratio */
 }
@@ -2140,7 +2141,7 @@ section {
 
 .blog .blog-comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: #ee9293;
+  border-color: #0a0f57;
 }
 
 .blog .blog-comments .reply-form .form-group {
@@ -2471,19 +2472,19 @@ section {
 }
 
 #footer .footer-newsletter h4 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 0;
 }
 
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
+#footer .footer-newsletter button {
+  margin-top: 0;
+  background: #0c0e4c;
   padding: 5px 10px;
   position: relative;
-  border-radius: 4px;
-  text-align: left;
+  border-radius: 5px;
+  text-align: center;
 }
 
 #footer .footer-newsletter form input[type=email] {
@@ -2492,12 +2493,12 @@ section {
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form button[type=submit] {
   position: absolute;
   top: 0;
   right: -1px;
   bottom: 0;
-  border-color: #fff;
+  border-color: #000;
   background: none;
   font-size: 16px;
   padding: 0 20px;
@@ -2508,8 +2509,8 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
-  background: #0c0e4c;
+#footer .footer-newsletter button input[type=submit]:hover {
+  background: #fff;
 }
 
 #footer .credits {
