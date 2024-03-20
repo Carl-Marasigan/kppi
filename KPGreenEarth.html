@@ -27,10 +27,69 @@
 
 </head>
 
+<style>
+  /*-------------Hero Section-------------*/
+#hero {
+width: 100%;
+height: 60vh;
+background: url("assets/img/planting_banner.jpg") top center no-repeat;
+background-size: cover;
+position: relative;
+padding-top: 75px;
+}
+
+#hero:before {
+content: "";
+background: rgba(0, 0, 0, 0.6);
+position: absolute;
+bottom: 0;
+top: 0;
+left: 0;
+right: 0;
+}
+
+#hero h2 {
+color: #fff;
+margin-top: 100px;
+  margin-bottom: 100px;
+text-transform: uppercase;
+ padding: 0px 0px 6px 0px;
+ font-size: 60px;
+text-align: left!important;
+ line-height: 50px;
+ letter-spacing: 5px;
+ font-weight: bold;
+font-family:Arial Black,serif;
+}
+
+#card {
+  text-align: justify;
+
+}
+
+@media (max-width: 768px) {
+#hero {
+  text-align: center;
+  padding-top: 58px;
+}
+
+
+#hero h2 {
+  font-size: 20px;
+  line-height: 24px;
+}
+}
+
+@media (max-height: 500px) {
+#hero {
+  height: 150vh;
+}
+}
+</style>
 <body>
 
 <!-- ======= Header ======= -->
- <header id="header" class="fixed-top d-flex align-items-center">
+<header id="header" class="fixed-top d-flex align-items-center">
   <div class="container d-flex align-items-center">
     <!-- Uncomment below if you prefer to use an image logo -->
     <a href="index.html" class="logo me-auto"><img src="assets/img/KP-NAV.png" alt=""></a>
@@ -87,14 +146,26 @@
 
   <main id="main">
 
-    <header class="hero">
-      <div class="container">
-        <h1>KPGreen Earth</h1>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quisque sagittis purus sit amet. Velit ut tortor pretium viverra suspendisse.</h2>
-        <a href="#" class="button">Learn More</a>
-    	<!-------     <span>or <a href="#">purchase now</a></span> ----->
-      </div>  
-    </header>
+    <!-- ======= KPGreen Earth Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <div class="row">
+      <div class="col-xl-6">
+        <h2>KP GREEN EARTH</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container" class="">
+  <div class="row" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6">
+</div>
+</div>
+</div>
+<!-- End Hero -->
+
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
       <div class="container" data-aos="fade-up">
@@ -106,37 +177,31 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="assets/img/PLANTING.png" alt="" class="img-fluid">
+                <img src="assets/img/greenearth.png" alt="kp green earth 2023" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
-                <a href="#">KP GREEN EARTH</a>
+                <a href="#" style="text-align: center;"><h4>KP GREEN EARTH</h4></a>
               </h2>
 
               <div class="entry-content">
-                <p>
-                  The Kanepackage Group of Companies (KPGroup), a Japanese firm committed in protecting the environment particularly coastal areas has successfully achieved planting about 10 million mangroves in a span of ten years covering 162 hectares with a survival rate of over 87 percent.
-
-                  Said undertaking is in line with company’s KPGreen Earth Corporate Social Responsibility (CSR) program launched last 2009 with planting sites in Olango Island (Cebu), Banacon Island (Bohol) and Barangay Manipis in Tanjay City, Negros Oriental.
-                  
-                  KPGreen Earth has partnered with the Department of Environment and Natural Resources (DENR), concerned local government units (LGUs) and different People’s Organization (POs) for the conduct of mangrove rehabilitation and its protection and management.
-                </p>
-                <div class="read-more">
+                <p class="text-justify">The Kanepackage Group of Companies (KPGroup), a Japanese firm committed in protecting the environment particularly coastal areas has successfully achieved planting about 10 million mangroves in a span of ten years covering 162 hectares with a survival rate of over 87 percent.</p>
+                <p class="text-justify">Said undertaking is in line with company’s KPGreen Earth Corporate Social Responsibility (CSR) program launched last 2009 with planting sites in Olango Island (Cebu), Banacon Island (Bohol) and Barangay Manipis in Tanjay City, Negros Oriental.</p>
+                <p class="text-justify">Earth has partnered with the Department of Environment and Natural Resources (DENR), concerned local government units (LGUs) and different People’s Organization (POs) for the conduct of mangrove rehabilitation and its protection and management.</p>
+                <!-- <div class="read-more">
                   <a href="blog-single.html">Read More</a>
-                </div>
+                </div>-->
               </div>
 
             </article><!-- End blog entry -->
 
-           
-
-            <div class="blog-pagination">
+            <!-- <div class="blog-pagination">
               <ul class="justify-content-center">
                 <li><a href="#">1</a></li>
                 <li class="active"><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
               </ul>
-            </div>
+            </div> -->
 
           </div><!-- End blog entries list -->
 
@@ -164,40 +229,12 @@
                   <li><a href="#">All KP Green Earth Activities <span></span></a></li>
                 </ul>
               </div><!-- End sidebar categories-->
-
-              <h3 class="sidebar-title">3 Reasons why you can easily achieve "Carbon Off-set" by using our Dream Package</h3>
-              <div class="sidebar-item recent-posts">
-                <div class="post-item clearfix">
-                  <h4 class="sidebar-item">•An ultimate Cushion Designing can achieve minimize material usage.
-                    <br>•Every purchase of our Package Component, we plant One(1) Mangrove seedling.
-                    <br>• We provide the service to show our customer how much CO2 has been saved by purchasing our products</a></h4>
-                </div>
-
-              </div><!-- End sidebar recent posts-->
-
-              <h3 class="sidebar-title">Tags</h3>
-              <div class="sidebar-item tags">
-                <ul>
-                  <li><a href="#">App</a></li>
-                  <li><a href="#">IT</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Mac</a></li>
-                  <li><a href="#">Design</a></li>
-                  <li><a href="#">Office</a></li>
-                  <li><a href="#">Creative</a></li>
-                  <li><a href="#">Studio</a></li>
-                  <li><a href="#">Smart</a></li>
-                  <li><a href="#">Tips</a></li>
-                  <li><a href="#">Marketing</a></li>
-                </ul>
-              </div><!-- End sidebar tags-->
-
+              
             </div><!-- End sidebar -->
-
           </div><!-- End blog sidebar -->
-
         </div>
-
+        
+        
       </div>
     </section><!-- End Blog Section -->
 
