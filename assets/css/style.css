@@ -864,6 +864,7 @@ section {
   padding: 60px 0;
 }
 
+
 #affiliates #affiliates-flters {
   padding: 0;
   margin: 5px 0 35px 0;
@@ -951,7 +952,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   padding-top: 0px;
-  font-size: 29px;
+  font-size: 20px;
   color: #152b90;
 }
 
@@ -996,7 +997,7 @@ section {
 #affiliates .affiliates-item .affiliates-info h4 {
   font-size: 18px;
   line-height: 1px;
-  font-weight: 700;
+  font-weight: 550;
   margin-bottom: 18px;
   padding-bottom: 0;
 }
@@ -1013,10 +1014,11 @@ section {
   padding: 0;
   margin: 0;
   color: #000;
-  font-weight: 500;
+  font-weight: 350;
   font-size: 14px;
   text-transform: uppercase;
 }
+
 
 /*--------------------------------------------------------------
 # Counts
