@@ -1018,6 +1018,116 @@ section {
   font-size: 14px;
   text-transform: uppercase;
 }
+/* AWARDS SECTION*/
+custom-carousel {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 20px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+main#carousel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.item {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  filter: drop-shadow(0px 15px 15px #d6d6d6);
+  --r: calc(var(--position) - var(--offset));
+  --abs: max(calc(var(--r) * -1), var(--r));
+  transition: all 0.25s linear;
+  transform: rotateY(calc(-10deg * var(--r)))
+    translateX(calc(-350px * var(--r)));
+  z-index: calc((var(--position) - var(--abs)));
+}
+
+div.item:nth-of-type(1) {
+  --offset: 1;
+  background-image: url('https://th.bing.com/th/id/OIP.Jyv8tMvSmcKM2vlehJ1LMQAAAA?rs=1&pid=ImgDetMain');
+  background-size: 40%; /* Adjust the value as needed */
+}
+
+div.item:nth-of-type(2) {
+  --offset: 2;
+   background-image: url('https://pngimg.com/uploads/square/square_PNG30.png');
+}
+div.item:nth-of-type(3) {
+  --offset: 3;
+   background-image: url('https://free-printablehq.com/wp-content/uploads/2019/07/inspirational-award-certificate-template-free-best-of-template-free-customizable-printable-certificates-of-achievement.jpg');
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+div.item:nth-of-type(4) {
+  --offset: 4;
+   background-image: url('https://pngimg.com/uploads/square/square_PNG30.png');
+}
+div.item:nth-of-type(5) {
+  --offset: 5;
+   background-image: url('https://pngimg.com/uploads/square/square_PNG30.png');
+}
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(1):checked ~ main#carousel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(2):checked ~ main#carousel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(3):checked ~ main#carousel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(4):checked ~ main#carousel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+}
+input:nth-of-type(5):checked ~ main#carousel {
+  --position: 5;
+}
+/* END OF AWARDS SECTION*/
 
 
 /*--------------------------------------------------------------
