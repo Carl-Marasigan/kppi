@@ -1067,6 +1067,27 @@ section {
   font-family: "Raleway", sans-serif;
   font-size: 14px;
 }
+/*---------------------------------------------------
+
+# Innovation
+----------------------------------------------------*/
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.innov-btn {
+  padding: 10px 20px;
+  background-color: #fff; /* Example button background color */
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.innov-btn:hover {
+  background-color: #0056b3; /* Example hover background color */
+}
 
 /*--------------------------------------------------------------
 # Tabs
