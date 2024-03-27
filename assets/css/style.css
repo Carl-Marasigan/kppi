@@ -398,7 +398,8 @@ p{padding:10px}
 }
 
 .navbar .dropdown ul a {
-  padding: 10px 20px;
+  min-width: 80px;
+  padding: 10px 15px;
   font-size: 14px;
 }
 
