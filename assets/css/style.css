@@ -960,19 +960,19 @@ section {
 .services .i-icon-box {
   margin-bottom: 20px;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 7px;
   background: transparent;
   transition: 0.3s;
   position: relative;
+  border: 2px solid #0c0e4c;
+  color: #111111;
+ 
 }
 
-.services .i-icon-box:hover {
-  background: #0c0e4c;
-}
 
 .services .i-icon-box i {
   float: left;
-  color: #fff;
+  color: #000;
   font-size: 40px;
   line-height: 0;
 }
@@ -994,7 +994,7 @@ section {
 }
 
 .services .i-icon-box .icon-box:hover h4 a {
-  color: #0000;
+  color: #fff;
 }
 
 .services .i-icon-box p {
