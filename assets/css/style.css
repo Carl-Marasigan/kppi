@@ -855,15 +855,17 @@ section {
 
 .innov-btn {
   padding: 10px 20px;
-  background-color: #fff; /* Example button background color */
-  color: black;
+  background-color: transparent; /* Example button background color */
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  border: 1px solid #0056b3;
   transition: background-color 0.3s ease;
 }
 
 .innov-btn:hover {
   background-color: #0056b3; /* Example hover background color */
+  color: #fff; /* Example hover font color */
 }
 
 /*--------------------------------------------------------------
