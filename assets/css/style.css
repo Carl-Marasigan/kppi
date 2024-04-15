@@ -384,6 +384,16 @@ section {
   right: 0;
   transform: skewY(-3deg);
 }
+.section-bg .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #fff;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
