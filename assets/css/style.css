@@ -1080,6 +1080,19 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0c0e4c;
 }
+
+.testimonials .swiper-pagination-bullet {
+  display: none;
+  
+}
+
+.testimonials .swiper-pagination-bullet:nth-child(-n+6) {
+  display: block;
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+}
+
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
