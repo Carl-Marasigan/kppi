@@ -1036,8 +1036,8 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  min-width: 50px;
-  min-height: auto;
+  min-width: 50%;
+  min-height: 50%;
   border-radius: 10px;
   filter: none;
   border: 6px solid #fff;
