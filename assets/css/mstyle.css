@@ -1,0 +1,120 @@
+:root {
+  --card-height: 300px; /* Decrease the height */
+  --card-width: calc(var(--card-height) * 1.1); /* Adjust width based on new height */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: flex; /* Make the container a flex container */
+  justify-content: center; /* Center the cards horizontally */
+}
+.card-columns {
+  column-count: 3; /* Set the number of columns */
+  column-gap: 20px; /* Adjust the gap between columns */
+}
+
+.column {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: auto; /* Adjust the gap between rows */
+}
+
+.card-card {
+  width: 100%;
+  height: 350px; /* Set the height of each card */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 36px;
+  perspective: 2500px;
+  margin: 0 10px; /* Adjust margin between the cards */
+}
+
+.cover-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  transition: all 0.5s;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.card-card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  opacity: 0;
+  width: 100%;
+  height: 80px;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+}
+.wrapper::before {
+  top: 0;
+  height: 100%;
+}
+
+.wrapper::after {
+  bottom: 0;
+  opacity: 1;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 26%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+
+.card-card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+
+.card-card:hover .wrapper::after {
+  height: 120px;
+}
+.title {
+  position: relative; /* Ensure the positioning context */
+  top: -20px; /* Adjust the value to move the text up */
+  width: 100%;
+  transition: transform 0.5s;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff; /* Your desired text color */
+  text-align: center; /* Center the text horizontally */
+
+  /* Add any other styling properties you need */
+}
+.card-card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+
+.character {
+  width: 100%;
+  opacity: 1; /* Set opacity to 1 to make the character image always visible */
+  transition: all 0.5s;
+  position: fixed;
+  z-index: -1;
+  bottom: 50px; /* Adjust the value to move the image up */
+    left: 0;
+}
+
+.card-card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
