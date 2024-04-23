@@ -69,6 +69,7 @@
   height: 100%;
 }
 
+/*
 .wrapper::after {
   bottom: 0;
   opacity: 1;
@@ -79,6 +80,7 @@
     rgba(12, 13, 19) 97%
   );
 }
+*/
 
 .card-card:hover .wrapper::before,
 .wrapper::after {
