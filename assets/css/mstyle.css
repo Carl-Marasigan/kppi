@@ -97,7 +97,7 @@
   transition: transform 0.5s;
   font-size: 20px;
   font-weight: bold;
-  color: #ffffff; /* Your desired text color */
+  color: #000000; /* Your desired text color */
   text-align: center; /* Center the text horizontally */
 
   /* Add any other styling properties you need */
