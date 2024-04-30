@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,9 +34,66 @@
    <!-- Template Carousel CSS File -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'><link rel="stylesheet" href="./bootstyle.css">
   <link href="assets/css/bootstyle.css" rel="stylesheet">
+<style>
+/* styles.css */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999; /* Set a high z-index value */
+  left: 50%;
+  top: calc(50% + 30px); /* Adjusted top value to accommodate the navigation bar height */
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  max-height: 80%;
+  overflow: hidden;
+}
 
+.modal-content {
+  background-color: #ffffff;
+  padding: 50px; /* Adjust padding to your preference */
+  border: 1px solid #888;
+  width: calc(100% - 70px); /* Account for padding */
+  height: calc(100% - 150px); /* Account for padding */
+}
+.video-description {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 20px;
+  left: 50px; /* Adjust as needed */
+  font-size: larger;
+}
+
+.close {
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px; /* Adjust as needed */
+  right: 47px; /* Adjust as needed */
+}
+
+/*
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+*/
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%;
+    max-width: none;
+    max-height: 50%;
+  }
+}
+</style>
 </head>
 <body>
+ 
    
  <!-- ======= Header ======= -->
  <header id="header" class="fixed-top d-flex align-items-center">
@@ -139,6 +196,7 @@
   </div>
 </header><!-- End Header -->
 
+
 <!-- Start Carousel -->
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -195,8 +253,17 @@
     </a>
   </div>
 
-
 <!-- End Carousel -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+    <p class="video-description">Kanepackage Philippine Inc. Promotional Video</p>
+    <span class="close">&times;</span>
+    <video controls autoplay>
+      <source src="assets/img/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
  <!-- ======= Clients Section ======= -->
 
  <section id="clients" class="clients">
@@ -233,47 +300,69 @@
   
   </div>
   <main id="main">
-   <!-- ======= About Section ======= -->
-   <section id="about" class="about section-bg">
-    <div class="container" data-aos="fade-up">
+ <!-- ======= About Section ======= -->
+ <section id="about" class="about section-bg">
+  <div class="container" data-aos="fade-up">
 
-      <div class="row no-gutters">
-        <div class="a-content col-xl-5 d-flex align-items-stretch">
-          <div class="a-content">
-            <h3>Welcome to KANEPACKAGE PHILIPPINE INC.</h3>
-            <p>
-              KANEPACKAGE PHILIPPINE INC. (KPPI) is committed to the concept of giving all customers Total Satisfaction.<br>
 
-              <br> We aim to lead the 21st Century as Global packaging company through developing a highly productive and competent workforce.
+    <h2 class="text-center"><b>WELCOME TO KANEPACKAGE PHILIPPINE INC.</b></h2>
 
-            </p>
-            <a href="#" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
+    <p class="text-center" > Kanepackage Philippines Inc. <b>(KPPI)</b> is committed to the concept of giving all customers total satisfaction. <br>
+      We aim to lead the 21st Century as Global packaging company through developing a highly productive and competent workforce.
+    </p>
+
+    <!-- <div class="row no-gutters">
+      <div class="a-content col-xl-5 d-flex align-items-stretch">
+        <div class="a-content">
+          <h3>Welcome to KANEPACKAGE PHILIPPINE INC.</h3>
+          <p>
+            KANEPACKAGE PHILIPPINE INC. (KPPI) is committed to the concept of giving all customers Total Satisfaction.<br>
+
+            <br> We aim to lead the 21st Century as Global packaging company through developing a highly productive and competent workforce.
+
+          </p>
+          <a href="#" class="about-btn"><span>About us</span> <i class="bx bx-chevron-right"></i></a>
+        </div>
+      </div> -->
+
+
+      <div class="col-xl-25 d-flex align-items-stretch">
+        <div class="icon-boxes d-flex flex-column justify-content-between">
+          <div class="row"> 
+            
+            <!-- Objectives -->
+            <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="100">
+              <h4><i class='bx bx-package'></i><span></span> OUR OBJECTIVES</h4>
+              <p>Kanepackage Philippine Inc. (KPPI), a company engaged in designing, manufacturing and sales of various packaging, cushioning and shipping materials, is dedicated to continually improve our performance and ensure the effectiveness of management systems, as well as to provide <b>Total Satisfaction</b> to all relevant interested parties.</p>
+            </div>
+      
+            <!-- Mission -->
+            <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="200">
+              <h4><i class="bi bi-truck"></i><span></span> OUR MISSION</h4>
+              <p>We will nurture an environment that stimulates progressively higher standards of individual  and team performance and promote harmonious integration of corporate functions. <b>Total Customer Satisfaction</b> constantly challenges the creation capabilities of well-trained and empowered employees who take pride in the work and who share a common desire for constant improvement in pursuit of the company's commitment to full customer's delight.</p>
+            </div>
+      
+            <!-- Vision -->
+            <div class="col-md-4 icon-box" data-aos="fade-up" data-aos-delay="300">
+              <h4><i class='bx bx-check-shield'></i><span></span> OUR VISION</h4>
+              <p>We deliver “Surprise”, “Good Impression”, and “Comfort” to as many countries/customers as possible speedy and timely through our package design, packages and services.
+      
+                Also, we will aim to be an excellent company by strengthening the trust of stake holders and corporate value.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="col-xl-7 d-flex align-items-stretch">
-          <div class="icon-boxes d-flex flex-column justify-content-center">
-            <div class="row">
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4><i class='bx bx-package'></i><span></span> Our Objectives</h4>
-                <p>Kanepackage Philippine Inc. (KPPI), a company engaged in designing, manufacturing and sales of various packaging, cushioning and shipping materials, is dedicated to continually improve our performance and ensure the effectiveness of management systems, as well as to provide <b>Total Satisfaction</b> to all relevant interested parties.</p>
-              </div>
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-                <h4><i class="bi bi-truck"></i><span></span> Our Mission</h4>
-                <p>We will nurture an environment that stimulates progressively higher standards of individual  and team performance and promote harmonious integration of corporate functions. <b>Total Customer Satisfaction</b> constantly challenges the creation capabilities of well-trained and empowered employees who take pride in the work and who share a common desire for constant improvement in pursuit of the company's commitment to full customer's delight.</p>
-              </div>
-              <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-                <h4><i class='bx bx-check-shield'></i><span></span> Our Vision</h4>
-                <p>We deliver “Surprise”, “Good Impression”, and “Comfort” to as many countries/customers as possible speedy and timely through our package design, packages and services.
+      </div>
+      
 
-                  Also, we will aim to be an excellent company by strengthening the trust of stake holders and corporate value.
-               </p>
-              </div>
-            </div>
-          </div><!-- End .content-->
 
-    </div>
-  </section>
-    <!-- End About Section -->
+        </div>
+        
+        <!-- End .content-->
+
+  </div>
+</section>
+  <!-- End About Section -->
   
      
       <!-- ======= Counts Section ======= -->
@@ -458,8 +547,103 @@
     </section>
     <!-- End Tabs Section -->
 
-	  
-<!-- ======= Portfolio Section ======= -->
+      <!-- ======= Pricing Section ======= -->
+      <section id="pricing" class="pricing section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>NEWS</h2>
+            <div class="content-container">
+              <img src="assets/img/award/news.png" alt="News Image" class="news-img">
+              <p class="hello">"KANEPACKAGE GROUP LEADS THE INDUSTRY SHIFT TO MORE SUSTAINABLE PACKAGING."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  <style>
+  .news-img {
+  width: 40%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.content-container {
+  display: flex; /* Use flexbox for content layout */
+  align-items: center; /* Align items vertically */
+}
+
+.content-container .hello {
+  font-size: 35px;
+  margin-left: 30px; /* Add space between image and text */
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+    @keyframes rotate3d {
+      from {
+        transform: perspective(600px) rotateY(0deg);
+      }
+      to {
+        transform: perspective(600px) rotateY(360deg);
+      }
+    }
+    .news-img {
+      animation: rotate3d 20s linear infinite;
+    }
+  </style>
+  <!-- End Pricing Section -->
+
+
+
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-boxes"></i>
+              <h4>Complete Packaging</h4>
+              <p></p>
+	    </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-columns-gap"></i>
+              <h4>Design and Development</h4>
+              <p></p>
+	    </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-fingerprint"></i>
+              <h4>Quality Flexo and Digital Printing</h4>
+              <p></p>
+	    </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-person"></i>
+              <h4>Logistics Services tru our valued partners</h4>
+              <p></p>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="600">
+              <i class="bi bi-calendar4-week"></i>
+              <h4>Pre and Post Development Testing of Packaging for our Costumers</h4>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+
+	  	<!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="section-bg">
   <div class="container" data-aos="fade-up">
 
@@ -539,57 +723,6 @@
 </section>
 <!-- End Portfolio Section -->
 
-
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="100">
-              <i class="bi bi-boxes"></i>
-              <h4>Complete Packaging</h4>
-              <p></p>
-	    </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-columns-gap"></i>
-              <h4>Design and Development</h4>
-              <p></p>
-	    </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-fingerprint"></i>
-              <h4>Quality Flexo and Digital Printing</h4>
-              <p></p>
-	    </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-person"></i>
-              <h4>Logistics Services tru our valued partners</h4>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-md-6 mt-4 mt-md-0">
-            <div class="i-icon-box" data-aos="fade-up" data-aos-delay="600">
-              <i class="bi bi-calendar4-week"></i>
-              <h4>Pre and Post Development Testing of Packaging for our Costumers</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section><!-- End Services Section -->
-	  
    <!-- ======= Pricing Section ======= -->
     <section id="pricing" class="pricing section-bg">
       <div class="container" data-aos="fade-up">
@@ -829,7 +962,6 @@
             <div class="member" data-aos="fade-up" data-aos-delay="300">
               <div class="member-img">
                 <img src="" class="img-fluid" alt="">
-                
               </div>
              <div class="member-info text-center">
                 <h4>...</h4>
@@ -848,76 +980,77 @@
 
     </section>
    
-
-
-    <!-- ======= Contact Section ======= -->
-   
-    <section id="contact" class="contact section-title">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-      
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-md-6">
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.154334744706!2d121.14782737383327!3d14.18573728710158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd63ec6b4584a9%3A0x48d38a88143743e6!2sKanepackage%20Philippine%2C%20Inc.%20-%20Laguna%20Factory!5e0!3m2!1sen!2sph!4v1710294474620!5m2!1sen!2sph" 
-                  width="500" height="200" 
-                  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                </div>
-              </div>
-              
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-envelope"></i>
-                  <h3>Email Us</h3>
-                  <p><a href="#">kane-package.net</a>
-		  <p><a href="#">facebook.com/kanepackagePH</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="info-box mt-4">
-                  <i class="bx bx-phone-call"></i>
-                  <h3>Call Us</h3>
-                  <p>TEL (+6349) 545-7166 to 7169<br><br></p>
-                </div>
-              </div>
-            </div>
-
-          <div class="col-md-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Contact</h2>
           </div>
-
+  
+          <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6">
+  
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="info-box">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.154334744706!2d121.14782737383327!3d14.18573728710158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd63ec6b4584a9%3A0x48d38a88143743e6!2sKanepackage%20Philippine%2C%20Inc.%20-%20Laguna%20Factory!5e0!3m2!1sen!2sph!4v1710294474620!5m2!1sen!2sph" 
+                      width="500" height="200" 
+                      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>kane-package.net<br>facebook.com/kanepackagePH</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="info-box mt-4">
+                    <i class="bx bx-phone-call"></i>
+                    <h3>Call Us</h3>
+                    <p>TEL (+6349) 545-7166 to 7169<br><br></p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+            <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                      <div class="col form-group">
+                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                      </div>
+                      <div class="col form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col form-group">
+                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                      </div>
+                  </div>
+                  <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+          </div>
+          
+  
+          </div>
+  
         </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
+      </section><!-- End Contact Section -->
+  
 
   </main>
   <!-- End #main -->
@@ -990,8 +1123,8 @@
   <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
+   
+        <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1011,6 +1144,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script  src="./prodscript.js"></script>
     <script src="assets/js/prodscript.js"></script>
+    <script>
+            window.addEventListener('load', function() {
+          document.getElementById('videoModal').style.display = 'block';
+        });
+
+        document.getElementsByClassName('close')[0].addEventListener('click', function() {
+          document.getElementById('videoModal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+          var modal = document.getElementById('videoModal');
+          if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+        });
+      </script>
 </body>
 
 </html>
