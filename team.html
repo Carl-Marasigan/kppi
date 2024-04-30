@@ -30,7 +30,101 @@
   
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+<style>
+  p,a,h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+}
 
+.section-team {
+	font-family: "Poppins", sans-serif;
+	padding: 80px 0;
+}
+
+.section-team .header-section {
+	margin-bottom: 50px;
+}
+
+.section-team .header-section .small-title {
+    margin-bottom: 25px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #3e64ff;
+}
+
+.section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.section-team .single-person {
+	margin-top: 30px;
+	padding: 30px;
+	background-color: #f6f9ff;
+	border-radius: 5px;
+}
+
+.section-team .single-person:hover {
+	background: linear-gradient(to right, #016cec, #00b5f7);
+}
+
+.section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+}
+
+.section-team .single-person:hover .person-image {
+	padding: 12px;
+    border: 4px dashed #fff;
+}
+
+.section-team .single-person .person-image img {
+	width: 100%;
+    border-radius: 50%;
+}
+
+.section-team .single-person .person-image .icon {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(to right, #016cec, #fbff25);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.section-team .single-person:hover .person-image .icon {
+	background: none;
+	background-color: #fff;
+	color: #016cec;
+}
+
+.section-team .single-person .person-info .full-name {
+	margin-bottom: 10px;
+	font-size: 20px;
+    font-weight: 700;
+}
+
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #016cec;
+}
+
+.section-team .single-person:hover .full-name,
+.section-team .single-person:hover .speciality {
+	color: #fff;
+}
+</style>
 </head>
 
 <body>
@@ -141,123 +235,111 @@
 
 
   <main id="main">
-
-  
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
+    <section class="section-team">
+      <div class="container">
         <div class="section-title">
           <h2>KPPI LEADERS</h2>
           </div>
-
-        <div class="row justify-content-center">
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/leaders/chairman.png" class="img-fluid" alt="">
-                 <!-- <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div> -->
+        <!-- / End Header Section -->
+        <div class="row">
+          <!-- Start Single Person -->
+          <div class="col-sm-4 col-lg-3 col-xl-2">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="assets/img/leaders/chairman.png" alt="">
               </div>
-             <div class="member-info text-center">
-                <h4>Sakutaro Kanehira</h4>
-                <span>Chairman</span>
+              <div class="person-info">
+                <h3 class="full-name">Sakutaro Kanehira</h3>
+                <span class="speciality">Chairman</span>
               </div>
             </div>
           </div>
-
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/leaders/ceo.png" class="img-fluid" alt="">
-               
+          <!-- / End Single Person -->
+          <!-- Start Single Person -->
+          <div class="col-sm-4 col-lg-3 col-xl-2">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="assets/img/leaders/ceo.png" alt="">
               </div>
-              <div class="member-info text-center">
-                <h4>Yoshikazu Kanesaka</h4>
-                <span>CEO</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/leaders/siryugi.png" class="img-fluid" alt="">
-               
-              </div>
-             <div class="member-info text-center">
-                <h4>Yuji Kanehira</h4>
-                <span>President</span>
+              <div class="person-info">
+                <h3 class="full-name">Yoshikazu Kanesaka</h3>
+                <span class="speciality">CEO</span>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/leaders/siryagi1.png" class="img-fluid" alt="">
-                
+          <!-- / End Single Person -->
+          <!-- Start Single Person -->
+          <div class="col-sm-4 col-lg-3 col-xl-2">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="assets/img/leaders/siryugi.png" alt="">
               </div>
-             <div class="member-info text-center">
-                <h4>Seigo Yagi</h4>
-                <span>Senior Executive Vice President</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/leaders/VP.png" class="img-fluid" alt="">
-                
-              </div>
-             <div class="member-info text-center">
-                <h4>Evangeline Ortillo</h4>
-                <span>Vice President</span>
+              <div class="person-info">
+                <h3 class="full-name">Yuji Kanehira</h3>
+                <span class="speciality">President</span>
               </div>
             </div>
           </div>
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="" class="img-fluid" alt="">
-                
+          <!-- / End Single Person -->
+           <!-- Start Single Person -->
+           <div class="col-sm-4 col-lg-3 col-xl-2">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="assets/img/leaders/siryagi1.png" alt="">
               </div>
-             <div class="member-info text-center">
-                <h4>....</h4>
-                <span>...</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-3">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="" class="img-fluid" alt="">
-                
-              </div>
-             <div class="member-info text-center">
-                <h4>...</h4>
-                <span>....</span>
+              <div class="person-info">
+                <h3 class="full-name">Seigo Yagi</h3>
+                <span class="speciality">Senior Executive Vice President</span>
               </div>
             </div>
           </div>
+          <!-- / End Single Person -->
+          <!-- Start Single Person -->
+          <div class="col-sm-4 col-lg-3 col-xl-2">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="assets/img/leaders/VP.png" alt="">
+              </div>
+              <div class="person-info">
+                <h3 class="full-name">Evangeline Ortillo</h3>
+                <span class="speciality">Vice President</span>
+              </div>
             </div>
           </div>
-
+          <!-- / End Single Person -->
+            <!-- Start Single Person -->
+            <div class="col-sm-4 col-lg-3 col-xl-2">
+              <div class="single-person">
+                <div class="person-image">
+                  <img src="" alt="">
+                </div>
+                <div class="person-info">
+                  <h3 class="full-name"></h3>
+                  <span class="speciality"></span>
+                </div>
+              </div>
+            </div>
+            <!-- / End Single Person -->
+              <!-- Start Single Person -->
+          <div class="col-sm-4 col-lg-3 col-xl-2">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="" alt="">
+              </div>
+              <div class="person-info">
+                <h3 class="full-name"></h3>
+                <span class="speciality"></span>
+              </div>
+            </div>
+          </div>
+          <!-- / End Single Person -->
         </div>
-
       </div>
     </section>
-    <!-- End Team Section -->
-
-
   </main><!-- End #main -->
 
 
-	           <!-- ======= Testimonials Section ======= -->
+	 <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
       <div class="container" data-aos="fade-up">
         <div class="section-title">
