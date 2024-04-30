@@ -805,6 +805,10 @@ section {
   font-size: 14px;
   text-transform: uppercase;
 }
+#affiliates .resized-image {
+  width: 200px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
 
 
 /*--------------------------------------------------------------
