@@ -35,59 +35,51 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'><link rel="stylesheet" href="./bootstyle.css">
   <link href="assets/css/bootstyle.css" rel="stylesheet">
   <style>
-       .modal {
-      display: none;
-      position: fixed;
-      z-index: 9999; 
-      left: 50%;
-      top: calc(50% + 30px); 
-      transform: translate(-50%, -50%);
-      width: 80%;
-      max-width: 800px;
-      max-height: 62%;
-      overflow: hidden;
-    }
-    
-    .modal-content {
-      background-color: #ffffff;
-      padding: 50px; 
-      border: 1px solid #888;
-      width: calc(100% - 50px); 
-      height: calc(100% - 50px);
-    }
-    .video-description {
-      color: rgb(0, 0, 0);
-      position: absolute;
-      top: 20px;
-      left: 50px;
-      font-size: larger;
-    }
-    
-    .close {
-      color: #000000;
-      font-size: 34px;
-      font-weight: bold;
-      position: absolute;
-      top: 15px; 
-      right: 47px; 
-    }
-    
-    /*
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    */
-  
-    @media screen and (max-width: 768px) {
-      .modal {
-        width: 90%;
-        max-width: none;
-        max-height: 50%;
-      }
-    }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999; 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  max-height: 62%;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  padding: 50px; 
+  border: 1px solid #888;
+  width: calc(100% - 50px); 
+  height: calc(100% - 50px);
+}
+
+.video-description {
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: larger;
+}
+
+.close {
+  color: #000000;
+  font-size: 34px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px; 
+  right: 47px; 
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    width: 90%;
+    max-width: none;
+    max-height: 50%;
+  }
+}
     </style>
 </head>
 <body>
