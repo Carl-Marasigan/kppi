@@ -35,32 +35,31 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'><link rel="stylesheet" href="./bootstyle.css">
   <link href="assets/css/bootstyle.css" rel="stylesheet">
   <style>
-      .modal {
+       .modal {
       display: none;
       position: fixed;
-      z-index: 9999;
+      z-index: 9999; 
       left: 50%;
-      top: 50%;
+      top: calc(50% + 30px); 
       transform: translate(-50%, -50%);
       width: 80%;
       max-width: 800px;
-      height: 80%; /* Adjusted height for consistency */
-      max-height: 500px; /* Adjusted max-height for consistency */
+      max-height: 62%;
       overflow: hidden;
     }
-        
-      .modal-content {
+    
+    .modal-content {
       background-color: #ffffff;
-      padding: 25px; /* Adjusted padding for consistency */
+      padding: 50px; 
       border: 1px solid #888;
-      width: calc(100% - 50px); /* Account for padding */
-      height: calc(100% - 50px); /* Account for padding */
+      width: calc(100% - 50px); 
+      height: calc(100% - 50px);
     }
     .video-description {
       color: rgb(0, 0, 0);
       position: absolute;
       top: 20px;
-      left: 50px; /* Adjust as needed */
+      left: 50px;
       font-size: larger;
     }
     
@@ -69,8 +68,8 @@
       font-size: 34px;
       font-weight: bold;
       position: absolute;
-      top: 15px; /* Adjust as needed */
-      right: 47px; /* Adjust as needed */
+      top: 15px; 
+      right: 47px; 
     }
     
     /*
@@ -81,13 +80,12 @@
       cursor: pointer;
     }
     */
-    /* Responsive adjustments */
+  
     @media screen and (max-width: 768px) {
       .modal {
         width: 90%;
         max-width: none;
-        height: 90%; /* Adjusted height for smaller screens */
-        max-height: none;
+        max-height: 50%;
       }
     }
     </style>
