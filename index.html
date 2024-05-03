@@ -34,53 +34,83 @@
    <!-- Template Carousel CSS File -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css'><link rel="stylesheet" href="./bootstyle.css">
   <link href="assets/css/bootstyle.css" rel="stylesheet">
- <style>
+  <style>
+/* Modal styles */
 .modal {
   display: none;
   position: fixed;
   z-index: 9999;
-  left: 50%;
-  top: calc(50% + 30px);
-  transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 800px;
-  height: 400px; /* Fixed height for modal */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Adjust as needed */
+  max-width: 800px; /* Adjust as needed */
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-top: 30px;
+  height: 0;
   overflow: hidden;
 }
 
-.modal-content {
-  background-color: #ffffff;
-  padding: 50px;
-  border: 1px solid #888;
-  width: calc(100% - 50px);
-  height: calc(100% - 50px);
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
+/* Description */
 .video-description {
-  color: rgb(0, 0, 0);
-  position: absolute;
-  top: 20px;
-  left: 50px;
-  font-size: larger;
-}
+  margin-right: 40px; /* Adjust as needed */
+  font-size: 24px;
 
-.close {
-  color: #000000;
-  font-size: 34px;
-  font-weight: bold;
-  position: absolute;
-  top: 15px;
-  right: 47px;
 }
-
-@media screen and (max-width: 768px) {
-  .modal {
+/* Responsive layout */
+@media screen and (max-width: 600px) {
+  .modal-content {
     width: 90%;
-    max-width: none;
-    height: 250px; /* Adjusted height for smaller screens */
+    
   }
+  .video-description {
+  margin-right: 40px; /* Adjust as needed */
+  font-size: 24px;
 }
-</style>
+}
+
+    </style>
 </head>
 <body>
  
@@ -248,12 +278,15 @@
   <div class="modal-content">
     <p class="video-description">Kanepackage Philippine Inc. Promotional Video</p>
     <span class="close">&times;</span>
+    <div class="video-container">
       <video controls autoplay>
         <source src="assets/img/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+    </div>
   </div>
 </div>
+
  <!-- ======= Clients Section ======= -->
 
  <section id="clients" class="clients">
@@ -541,7 +574,7 @@
       <section id="pricing" class="pricing section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-           <h3></h3>
+            <h2>NEWS</h2>
             <div class="content-container">
               <img src="assets/img/award/news.png" alt="News Image" class="news-img">
               <p class="hello">"KANEPACKAGE GROUP LEADS THE INDUSTRY SHIFT TO MORE SUSTAINABLE PACKAGING."</p>
@@ -1026,6 +1059,7 @@
                           <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                       </div>
                   </div>
+                    
                   <div class="my-3">
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
@@ -1135,20 +1169,35 @@
     <script  src="./prodscript.js"></script>
     <script src="assets/js/prodscript.js"></script>
     <script>
-            window.addEventListener('load', function() {
-          document.getElementById('videoModal').style.display = 'block';
-        });
+              window.addEventListener('load', function() {
+            openVideoModal(); // Call function to open video modal when page loads
+          });
 
-        document.getElementsByClassName('close')[0].addEventListener('click', function() {
-          document.getElementById('videoModal').style.display = 'none';
-        });
+          document.getElementsByClassName('close')[0].addEventListener('click', function() {
+            closeVideoModal(); // Call function to close video modal when close button is clicked
+          });
 
-        window.addEventListener('click', function(event) {
-          var modal = document.getElementById('videoModal');
-          if (event.target == modal) {
-            modal.style.display = 'none';
+          window.addEventListener('click', function(event) {
+            var modal = document.getElementById('videoModal');
+            if (event.target == modal) {
+              closeVideoModal(); // Call function to close video modal when clicking outside the modal
+            }
+          });
+
+          // Function to open the video modal
+          function openVideoModal() {
+            var videoModal = document.getElementById('videoModal');
+            videoModal.style.display = "block";
+            document.body.style.overflow = "hidden"; // Disable scroll
           }
-        });
+
+          // Function to close the video modal
+          function closeVideoModal() {
+            var videoModal = document.getElementById('videoModal');
+            videoModal.style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scroll
+          }
+
       </script>
 </body>
 
