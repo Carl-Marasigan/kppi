@@ -126,19 +126,52 @@ html {
   margin-right: 1px;
 }
 .book-cell:nth-child(1) {
-  background-color: #fff429;
+  background-color: #ffffff;
 }
 .book-cell:nth-child(2) {
-  background-color: #0fcef0;
+  background-color: #0B76BC;
 }
 .book-cell:nth-child(3) {
-  background-color: #edb9d6;
+  background-color: #ffffff;
 }
 .book-cell:nth-child(4) {
-  background-color: #fdca95;
+  background-color: #f7ff11;
 }
 .book-cell:nth-child(5) {
-  background-color: #cbb5e2;
+  background-color: #ffffff;
+}
+.book-cell:nth-child(6) {
+  background-color: #0B76BC;
+}
+.book-cell:nth-child(7) {
+  background-color: #ffffff;
+}
+.book-cell:nth-child(8) {
+  background-color: #f7ff11;
+}
+.book-cell:nth-child(9) {
+  background-color: #ffffff;
+}
+.book-cell:nth-child(10) {
+  background-color: #0B76BC;
+}
+.book-cell:nth-child(11) {
+  background-color: #ffffff;
+}
+.book-cell:nth-child(12) {
+  background-color: #f7ff11;
+}
+.book-cell:nth-child(13) {
+  background-color: #ffffff;
+}
+.book-cell:nth-child(14) {
+  background-color: #0B76BC;
+}
+.book-cell:nth-child(15) {
+  background-color: #ffffff;
+}
+.book-cell:nth-child(16) {
+  background-color: #f7ff11;
 }
 
 .flickity-page-dots {
@@ -146,7 +179,7 @@ html {
 }
 
 .flickity-prev-next-button .arrow {
-  fill: #d6d6d6;
+  color: #000000;
 }
 
 .flickity-prev-next-button svg {
@@ -173,7 +206,6 @@ html {
   bottom: -35px;
   left: 35px;
   border-radius: 2px;
-  box-shadow: -2px 6px 19px 0px #7f818e;
   transition: 0.3s ease;
 }
 .book-photo:hover {
@@ -196,7 +228,7 @@ html {
 .book-title {
   color: #000000;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .book-author {
@@ -324,7 +356,7 @@ h1 {
 
 .book-sum {
   margin-top: 20px;
-  font-size: 12px;
+  font-size: 15px;
   text-align: justify;
   color: black;
 }
