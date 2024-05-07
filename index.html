@@ -932,36 +932,34 @@
               </div>
   
             </div>
-            <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                  <div class="row">
-                      <div class="col form-group">
-                          <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                      </div>
-                      <div class="col form-group">
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                      </div>
+             <div class="col-lg-6">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="contactForm">
+                <div class="row">
+                  <div class="col form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                   </div>
-                  <div class="row">
-                      <div class="col form-group">
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                      </div>
+                  <div class="col form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                   </div>
-                  <div class="row">
-                      <div class="col form-group">
-                          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                      </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="captcha" id="captcha" placeholder="Enter Captcha" required>
+                  <br>
+                  <div style="text-align: center;">
+                  <class id="captchaText" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; text-align: center; color: black; font-size: 15px;">
+                </div>
+                    </div>
 
-		  <!-- Captcha input field -->
-                  <div class="form-group">
-                  <!-- <label for="captcha">Enter Captcha:</label> -->
-                  <input type="text" class="form-control"  placeholder="Enter Captcha:" name="captcha" id="captcha" required>
-                  <img src="forms/captcha.php" alt="Captcha Image">
-                  <!-- <img id="captcha-image" src="forms/captcha.php" alt="Captcha Image"> -->
-                  </div>
-
-                    
                   <div class="my-3">
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
@@ -1070,6 +1068,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script  src="./prodscript.js"></script>
     <script src="assets/js/prodscript.js"></script>
+	    <script>
+      window.onload = function() {
+        generateCaptcha()
+      };
+    
+      function generateCaptcha() {
+        var captchaLength = 6; // Length of the CAPTCHA string
+        var captchaChars = '!@#$%^&*abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // Characters to use in CAPTCHA
+        var captcha = '';
+    
+        // Use to Generate random CAPTCHA string
+        for (var i = 0; i < captchaLength; i++) {
+          captcha += captchaChars.charAt(Math.floor(Math.random() * captchaChars.length));
+      
+        }
+        //for captcha
+        document.getElementById('captchaText').innerText = captcha;
+      }
+    </script>
     <script>
               window.addEventListener('load', function() {
             openVideoModal(); // Call function to open video modal when page loads
