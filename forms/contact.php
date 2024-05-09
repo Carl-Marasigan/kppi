@@ -33,8 +33,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         )
     );
     // Set up sender and recipient
-    $mail->setFrom("jcringtest@gmail.com", "KanePackage Philippine");
-    $mail->addAddress("capunokristine8@gmail.com"); // Recipient email
+    $mail->setFrom("eddamae08@gmail.com", "Seventeen");
+    $mail->addAddress("eddamae08@gmail.com"); // Recipient email
     // Set email content
     $mail->isHTML(false);
     $mail->Subject = $subject; // Using subject from form
