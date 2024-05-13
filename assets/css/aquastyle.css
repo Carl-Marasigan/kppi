@@ -78,7 +78,12 @@ main a {
   border-radius: 3.125rem;
   transition: 0.3s ease-in-out;
 }
-
+main p {
+ font-size: larger;
+  font-weight: 500;
+  background: #fff;
+  text-align: justify;
+}
 main > div > a {
   border: 2px solid #c2c2c2;
   margin-top: 2.188rem;
@@ -105,8 +110,8 @@ main > div > a:hover {
 }
 
 .swiper-slide {
-  width: 18.75rem;
-  height: 28.125rem;
+  width: 40.75rem;
+  height: 38.125rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -130,7 +135,7 @@ main > div > a:hover {
   font-weight: 300;
   padding: 0 1.563rem;
   line-height: 1.6;
-  font-size: 0.75rem;
+  font-size: 1.75rem;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -159,15 +164,15 @@ main > div > a:hover {
 }
 
 .swiper-slide--one {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("assets/img/Green/g1.png") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a43 00, #2c5364 00), url("") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--two {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("assets/img/Green/g2.jpg") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a43 00, #2c5364 00), url("assets/img/Green/g2.jpg") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--three {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://images.unsplash.com/photo-1611843467160-25afb8df1074?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat 50% 50%/cover;
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url("https://drive.google.com/file/d/1quIUHBJScfgUgnmIINMxx4ZoJv-IScNQ/view?usp=sharing") no-repeat 50% 50%/cover;
 }
 
 .swiper-slide--four {
