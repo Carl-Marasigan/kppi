@@ -975,7 +975,48 @@
   </div>
 </section><!-- End Contact Section -->
 
- 
+  <!-- Add the provided script -->
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+  $(document).ready(function() {
+    $('#contactForm').submit(function(event) {
+      event.preventDefault();
+      
+      // Verify reCAPTCHA response
+      var recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) {
+        // Handle case when reCAPTCHA is not completed
+        console.error("reCAPTCHA not completed.");
+        return;
+      }
+
+      // Serialize form data
+      var formData = $(this).serialize();
+      
+      // Append reCAPTCHA response to form data
+      formData += '&g-recaptcha-response=' + recaptchaResponse;
+      
+      // AJAX request to submit form data
+      $.ajax({
+        type: 'POST',
+        url: 'forms/contact.php',
+        data: formData,
+        success: function(response) {
+          // Handle success response
+          console.log(response);
+        },
+        error: function(xhr, status, error) {
+          // Handle error response
+          console.error(error);
+        }
+      });
+    });
+  });
+</script>
+
+
 
   </main>
   <!-- End #main -->
