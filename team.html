@@ -127,6 +127,25 @@ We aim to lead the 21st Century as Global packaging company through developing a
 	color: #fff;
 }
 
+/* Ensure images are responsive */
+.person-image img, .testimonial-img {
+  width: 100%;
+  height: auto;
+  max-width: 195px; /* Optional: Keep aspect ratio consistent */
+}
+
+/* Media queries for additional tweaks if necessary */
+@media (max-width: 767.98px) {
+  .single-person, .testimonial-item {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .single-person, .testimonial-item {
+    margin-bottom: 30px;
+  }
+}
 </style>
 </head>
 
