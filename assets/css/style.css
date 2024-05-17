@@ -805,6 +805,11 @@ section {
   font-size: 14px;
   text-transform: uppercase;
 }
+#affiliates .affiliates-item figure .img-fluid {
+  width: 220px; 
+  height: 220px;
+  align-items: center; 
+}
 
 
 /*--------------------------------------------------------------
