@@ -1,5 +1,5 @@
 :root {
-  --card-height: 300px; /* Decrease the height */
+  --card-height: 250px; /* Decrease the height */
   --card-width: calc(var(--card-height) * 1.1); /* Adjust width based on new height */
 }
 
@@ -12,32 +12,32 @@
   justify-content: center; /* Center the cards horizontally */
 }
 .card-columns {
-  column-count: 3; /* Set the number of columns */
-  column-gap: 20px; /* Adjust the gap between columns */
+  display: grid; /* Use grid layout instead of columns */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Set the columns to adjust automatically based on the available space */
+  gap: 20px; /* Adjust the gap between columns */
 }
 
 .column {
-  display: inline-block;
   width: 100%;
-  margin-bottom: auto; /* Adjust the gap between rows */
+  margin-bottom: 20px; /* Adjust the gap between rows */
 }
 
 .card-card {
   width: 100%;
-  height: 350px; /* Set the height of each card */
+  height: var(--card-height); /* Set the height of each card */
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0 36px;
+  flex-direction: column-reverse; /* Make content stack vertically in reverse order */
+  align-items: center; /* Center content horizontally */
+  padding: 20px; /* Adjust padding */
   perspective: 2500px;
   margin: 0 10px; /* Adjust margin between the cards */
 }
 
 .cover-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%; /* Ensure image fits within card */
+  max-height: 70%; /* Limit image height to avoid overlapping */
+  object-fit: contain; /* Maintain aspect ratio */
 }
 
 .wrapper {
@@ -59,7 +59,7 @@
   content: "";
   opacity: 0;
   width: 100%;
-  height: 80px;
+  height: 60px; /* Adjust height */
   transition: all 0.5s;
   position: absolute;
   left: 0;
@@ -69,33 +69,20 @@
   height: 100%;
 }
 
-/*
-.wrapper::after {
-  bottom: 0;
-  opacity: 1;
-  background-image: linear-gradient(
-    to bottom,
-    transparent 26%,
-    rgba(12, 13, 19, 0.5) 68%,
-    rgba(12, 13, 19) 97%
-  );
-}
-*/
-
 .card-card:hover .wrapper::before,
 .wrapper::after {
   opacity: 1;
 }
 
 .card-card:hover .wrapper::after {
-  height: 120px;
+  height: 80px; /* Adjust height */
 }
 .title {
   position: relative; /* Ensure the positioning context */
-  top: -20px; /* Adjust the value to move the text up */
+  top: 10px; /* Adjust the value to move the text down */
   width: 100%;
   transition: transform 0.5s;
-  font-size: 20px;
+  font-size: 16px; /* Adjust font size */
   font-weight: bold;
   color: #000000; /* Your desired text color */
   text-align: center; /* Center the text horizontally */
@@ -103,20 +90,34 @@
   /* Add any other styling properties you need */
 }
 .card-card:hover .title {
-  transform: translate3d(0%, -50px, 100px);
+  transform: translate3d(0%, -30px, 100px);
 }
 
 .character {
   width: 100%;
   opacity: 1; /* Set opacity to 1 to make the character image always visible */
   transition: all 0.5s;
-  position: fixed;
+  position: relative;
   z-index: -1;
-  bottom: 50px; /* Adjust the value to move the image up */
-    left: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .card-card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
 }
+
+@media screen and (max-width: 768px) {
+  .card-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card-card {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
