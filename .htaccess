@@ -1,4 +1,51 @@
-RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteEngine On
+
+# Redirect 
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+
+# Specific rewrite rules for pages
+
+RewriteRule ^index$ index.html [NC,L]
+RewriteRule ^accessories$ accessories.html [NC,L]
+RewriteRule ^award$ award.html [NC,L]
+RewriteRule ^brown-box-print$ brown-box-print.html [NC,L]
+RewriteRule ^bubble-bag$ bubble-bag.html [NC,L]
+RewriteRule ^cap-tray$ cap-tray.html [NC,L]
+RewriteRule ^certificates$ certificates.html [NC,L]
+RewriteRule ^colored-box$ colored-box.html [NC,L]
+RewriteRule ^core$ core.html [NC,L]
+RewriteRule ^corner-angle$ corner-angle.html [NC,L]
+RewriteRule ^corrugated-cushion$ corrugated-cushion.html [NC,L]
+RewriteRule ^corrugated-packaging$ corrugated-packaging.html [NC,L]
+RewriteRule ^danpla-partition$ danpla-partition.html [NC,L]
+RewriteRule ^danpla-spin-board$ danpla-spin-board.html [NC,L]
+RewriteRule ^danpla$ danpla.html [NC,L]
+RewriteRule ^double-triple-wall$ double-triple-wall.html [NC,L]
+RewriteRule ^dunnage$ dunnage.html [NC,L]
+RewriteRule ^e-cushion$ e-cushion.html [NC,L]
+RewriteRule ^eperan-cushion$ eperan-cushion.html [NC,L]
+RewriteRule ^heavy-duty-packaging$ heavy-duty-packaging.html [NC,L]
+RewriteRule ^innovation$ innovation.html [NC,L]
+RewriteRule ^international-affiliates$ international-affiliates.html [NC,L]
+RewriteRule ^kp-community-activities$ kp-community-activities.html [NC,L]
+RewriteRule ^kp-green-earth$ kp-green-earth.html [NC,L]
+RewriteRule ^kppi-machine$ kppi-machine.html [NC,L]
+RewriteRule ^local-affiliates$ local-affiliates.html [NC,L]
+RewriteRule ^microfoam-sheet$ microfoam-sheet.html [NC,L]
+RewriteRule ^moulded-cushion$ moulded-cushion.html [NC,L]
+RewriteRule ^moulded-fabricated-cushion$ moulded-fabricated-cushion.html [NC,L]
+RewriteRule ^other-services$ other-services.html [NC,L]
+RewriteRule ^pads$ pads.html [NC,L]
+RewriteRule ^pallet-set$ pallet-set.html [NC,L]
+RewriteRule ^partition$ partition.html [NC,L]
+RewriteRule ^PE-bag$ PE-bag.html [NC,L]
+RewriteRule ^pe-foam-cushion$ pe-foam-cushion.html [NC,L]
+RewriteRule ^PE-foam$ PE-foam.html [NC,L]
+RewriteRule ^plastic-packaging$ plastic-packaging.html [NC,L]
+RewriteRule ^pufoam$ pufoam.html [NC,L]
+RewriteRule ^sleeve$ sleeve.html [NC,L]
+RewriteRule ^spacers$ spacers.html [NC,L]
+RewriteRule ^team$ team.html [NC,L]
+RewriteRule ^vacuum-tray$ vacuum-tray.html [NC,L]
