@@ -431,23 +431,56 @@ We aim to lead the 21st Century as Global packaging company through developing a
     </section>
    <!---- End Counts Section -->
 
-  <!--INNOVATION SECTION -->
-    <section id="innovation" class="innovation section-bg">
-      <div class="container" data-aos="flip-down">
-        <div class="section-title">
-          <h2>Our Innovation</h2>
-        </div>
-        <div class="i-content">&emsp;&emsp;&emsp;
-          <img src="assets/img/6.png" style="width: 30%; height: auto;">&emsp;
-          <img src="assets/img/innovation.gif" style="width: 30%; height: auto;">&emsp;
-          <img src="assets/img/5.png" style="width: 30%; height: auto;">
-          <div class="i-button-container">
-            <a href="innovation.html" class="innov-btn"><span>View More</span></a>
-          </div>
-        </div>
+<!-- INNOVATION SECTION -->
+<section id="innovation" class="innovation section-bg">
+  <div class="container" data-aos="flip-down">
+    <div class="section-title">
+      <h2>Our Innovation</h2>
+    </div>
+    <div class="i-content">
+      <img src="assets/img/6.png" alt="Image 1">
+      <img src="assets/img/innovation.gif" alt="Image 2">
+      <img src="assets/img/5.png" alt="Image 3">
+      <div class="i-button-container">
+        <a href="innovation.html" class="innov-btn"><span>View More</span></a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
+<style>
+  .i-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .i-content img {
+    width: 30%; /* Initial width */
+    height: auto;
+    margin: 0 15px; /* Adjust margins for spacing */
+  }
+
+  .i-button-container {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .i-content {
+      flex-direction: column; /* Stack images vertically */
+      align-items: center; /* Center items horizontally */
+    }
+
+    .i-content img {
+      width: 80%; /* Set width to 80% for smaller screens */
+      margin-bottom: 20px; /* Add space between images */
+    }
+  }
+</style>
 
  <!-- ======= Tabs Section ======= -->
 <section id="tabs" class="tabs">
@@ -569,7 +602,6 @@ We aim to lead the 21st Century as Global packaging company through developing a
       <section id="pricing" class="pricing section-bg">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2></h2>
             <div class="content-container">
               <img src="assets/img/award/news.png" alt="News Image" class="news-img">
               <p class="hello">"KANEPACKAGE GROUP LEADS THE INDUSTRY SHIFT TO MORE SUSTAINABLE PACKAGING."</p>
@@ -577,36 +609,54 @@ We aim to lead the 21st Century as Global packaging company through developing a
           </div>
         </div>
       </section>
-  <style>
-  .news-img {
-  width: 40%; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-}
+      <style>
+            .news-img {
+            width: 40%; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+          }
 
-.content-container {
-  display: flex; /* Use flexbox for content layout */
-  align-items: center; /* Align items vertically */
-}
+          .content-container {
+            display: flex; /* Use flexbox for content layout */
+            align-items: center; /* Align items vertically */
+          }
 
-.content-container .hello {
-  font-size: 35px;
-  margin-left: 30px; /* Add space between image and text */
-  font-style: italic;
-  font-family: 'Times New Roman', Times, serif;
-}
-    @keyframes rotate3d {
-      from {
-        transform: perspective(600px) rotateY(0deg);
-      }
-      to {
-        transform: perspective(600px) rotateY(360deg);
-      }
-    }
-    .news-img {
-      animation: rotate3d 20s linear infinite;
-    }
-  </style>
-  <!-- End Pricing Section -->
+          .content-container .hello {
+            font-size: 35px;
+            margin-left: 30px; /* Add space between image and text */
+            font-style: italic;
+            font-family: 'Times New Roman', Times, serif;
+          }
+              @keyframes rotate3d {
+                from {
+                  transform: perspective(600px) rotateY(0deg);
+                }
+                to {
+                  transform: perspective(600px) rotateY(360deg);
+                }
+              }
+              .news-img {
+                animation: rotate3d 20s linear infinite;
+              }
+              
+            /* Media Query for smaller screens */
+            @media screen and (max-width: 768px) {
+              .content-container {
+                flex-direction: column; /* Change flex direction to column */
+                align-items: center; /* Center items horizontally */
+                text-align: center; /* Center text */
+              }
+              .news-img {
+                width: 80%; /* Adjust the width for smaller screens */
+              }
+
+              .content-container .hello {
+                margin-left: 0; /* Reset margin */
+                margin-top: 10px; /* Add space between image and text */
+
+              }
+            }
+      </style>
+      <!-- End Pricing Section -->
 
 
 
