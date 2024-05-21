@@ -807,6 +807,7 @@ section {
 }
 
 
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -832,7 +833,7 @@ section {
   transform: translateX(-50%);
   font-size: 24px;
   background: #fff;
-  color: #f5f115;
+  color: #faf608;
   border-radius: 50px;
   border: 2px solid #fff;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
@@ -843,16 +844,14 @@ section {
 
 .counts .count-box span {
   font-size: 36px;
-  display: block;
+  display: inline-block; /* Change display to inline-block */
   font-weight: 700;
   color: #111111;
 }
 
-.counts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
+.counts .count-box .plus-sign {
+  font-size: 28px;
+  margin-left: 3px;
 }
 /*---------------------------------------------------
 
