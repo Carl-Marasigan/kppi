@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Kanepackage Philippine Inc.</title>
   <link rel="icon" href="assets/img/KP-NAV.png" type="image/x-icon">
-  <meta content="Kanepackage Philippines Inc. (KPPI) is committed to the concept of giving all customers total satisfaction.
-We aim to lead the 21st Century as Global packaging company through developing a highly productive and competent workforce." name="description">
-  <meta content="corrugated, kppi, package, kanepackage, certification, certificate" name="keywords">
+  <meta content="" name="description">
+  <meta content="corrugated, kppi, package, kanepackage" name="keywords">
 
   
   <!-- Vendor CSS Files -->
@@ -21,24 +21,104 @@ We aim to lead the 21st Century as Global packaging company through developing a
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
  
 
-   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
-   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
-   <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css'>
-   <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
-   <link rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.2.0/css/all.css'>
+   <!-- KPPI CSS -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'><link rel="stylesheet" href="assets/css/netflixstyle.css">
+  <style>
+    /* Root Variables */
+    :root {
+      --primary: #ffffff;
+      --light: #F3F3F3;
+      --dark: #686868;
+    }
+    
+    /* Basic Image Styling */
+    img {
+      max-width: 55%;
+      height: 90%;
+    }
+    
+    /* Typography */
+    h1 {
+      color: #0B76BC;
+      font-weight: 600;
+    }
+    
+    /* Main Container Styling */
+    .main-container {
+      justify-content: center;
+      align-items: center;
+      padding: 70px;
+      text-align: center; /* Center align content */
+    }
+    
 
-
-   <link rel="stylesheet" href="./cstyle.css">
-   <link href="assets/css/cstyle.css" rel="stylesheet">
-
-      <!-- KPPI CSS -->
-      <link rel="stylesheet" href="./style.css">
-      <link href="assets/css/style.css" rel="stylesheet">
-   
+    
+    /* Box Styling */
+    .box {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+    
+    .box a {
+      transition: transform .3s;
+    }
+    
+    .box a:hover {
+      transform: scale(1.2);
+    }
+    
+    .box img {
+      border-radius: 2px;
+    }
+    
+    /* Responsive Styling */
+    @media (max-width: 900px) {
+      .box {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+      }
+    }
+    
+    @media (max-width: 700px) {
+      .box {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+      }
+    
+      .sub-links ul {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 500px) {
+      .wrapper1 {
+        font-size: 15px;
+      }
+    
+      .box {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+      }
+    
+      .box a:hover {
+        transform: scale(1.1);
+      }
+    }
+    
+    </style>
 </head>
+
+
 <body>
+
+   
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
@@ -53,7 +133,7 @@ We aim to lead the 21st Century as Global packaging company through developing a
           <li class="dropdown"><a href="index.html#about"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
            <ul>
               <li><a href="index.html#about">About Us</a></li>
-        <li><a href="innovation.html">Our Innovation</a></li>
+        <li><a href="innovation.html">Innovation</a></li>
         <li><a href="award.html">Awards</a></li>
         <li><a href="certificates.html">Certificates</a></li>
             </ul>
@@ -138,61 +218,25 @@ We aim to lead the 21st Century as Global packaging company through developing a
   
     </div>
   </header><!-- End Header -->
+
+  <main id="main">
+    <!-- MAIN CONTAINER -->
+    <section class="main-container" >
+      <div class="section-title">
+        <h2>Certificates</h2>
+    </div>
+      <div class="location" id="home">
+          <div class="box">
+            <a href="http://www.kane-package.net/awards/ISO/iso9001.pdf" target="_blank"><img src="assets/img/ISO/1.png" alt=""></a>
+            <a href="http://www.kane-package.net/awards/ISO/iso14001.pdf" target="_blank"><img src="assets/img/ISO/2.png" alt=""></a>
+            <a href="http://www.kane-package.net/awards/ISO/iso45001.pdf" target="_blank"><img src="assets/img/ISO/3.png" alt=""></a>
+
+           
+          </div>
+      </div>
   
-<br><br>
-<br><br>
-
-     <div class="section-title">
-       <h2>CERTIFICATES</h2>
-       <p></p>
-     </div>
-     <br><br>
- <!-- partial:index.partial.html -->
-<div class="wrapper loading">
-   <div class="destination folded">
-     <h1>Iceland</h1>
-     <hr/>
-     <p class="caption">Fire and ice</p>
-     <button>Discover</button><img src="https://cdn.pixabay.com/photo/2012/04/13/11/07/school-31872_1280.png" alt="Beautiful Iceland"/>
-   </div>
-   <div class="destination folded">
-      <h1>Iceland</h1>
-      <hr/>
-      <p class="caption">Fire and ice</p>
-      <button>Discover</button><img src="https://www.lifewire.com/thmb/TLit6_KSXdkx2SFYgy9vKpbOOh0=/3980x2653/filters:fill(auto,1)/examplecertificate-25bcfe4b6ae14fe9a49bc64eb667e4ef.jpg" alt="Beautiful Iceland"/>
-    </div>
-    <div class="destination folded">
-      <h1>Iceland</h1>
-      <hr/>
-      <p class="caption">Fire and ice</p>
-      <button>Discover</button><img src="https://thumbs.dreamstime.com/b/official-certificate-beige-simple-border-business-modern-design-gold-emblem-frame-148861990.jpg" alt="Beautiful Iceland"/>
-    </div>
-   <div class="destination folded">
-     <h1>Canada</h1>
-     <hr/>
-     <p class="caption">Genuine wilderness</p>
-     <button>Discover</button><img src="https://th.bing.com/th/id/OIP.KLRqTgHrUAf5VMX3E4cZWgHaFj?rs=1&pid=ImgDetMain" alt="Beautiful Canada"/>
-   </div>
-   
-   <div class="destination folded">
-     <h1>Norway</h1>
-     <hr/>
-     <p class="caption">Arctic gateway</p>
-     <button>Discover</button><img src="https://th.bing.com/th/id/OIP.QPM8gTayCrWD-hhuUPRW8AHaFs?w=771&h=593&rs=1&pid=ImgDetMain" alt="Beautiful Norway"/>
-   </div>
-   <div class="destination folded">
-     <h1>Greenland</h1>
-     <hr/>
-     <p class="caption">Epic landscapes</p>
-     <button>Discover</button><img src="https://th.bing.com/th/id/R.8ec876be0695aef6797e31aac47dd6e7?rik=Mb074cCzggIVdQ&riu=http%3a%2f%2fwww.pdexternal-roche.com%2fae_global_v6%2fen_ae_v6%2fae_v6_en_certificate%2fcert.jpg&ehk=2nHSfEwCJZeRtSe%2b6066uAKOZOzzkO%2f5ICQwOu6WgJk%3d&risl=&pid=ImgRaw&r=0" alt="Beautiful Greenland"/>
-   </div>
- </div>
-<!-- partial:index.partial.html -->
-
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+  </div>
+  </main><!-- End #main -->
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="footer-top">
@@ -259,25 +303,24 @@ We aim to lead the 21st Century as Global packaging company through developing a
   </div>
 </footer>
 <!-- End Footer -->
-<!-- partial -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
- <!-- Vendor JS Files -->
- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
- <script src="assets/vendor/aos/aos.js"></script>
- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
- <script src="assets/vendor/php-email-form/validate.js"></script>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
- <!-- Template Main JS File -->
- <script src="assets/js/main.js"></script>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
- <script type="module"src="assets/js/cscript.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- Include AOS library script -->
 
 
 </body>
+
 </html>
+
