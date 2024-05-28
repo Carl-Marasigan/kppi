@@ -456,14 +456,15 @@ section {
   width: 10px;
   height: 10px;
   margin-bottom: -15px;
-  background-color: #fff;
+  background-color: #5d635d;
   opacity: 1;
-  border: 1px solid #0B76BC;
+  border: 1px solid #5d635d;
 
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0B76BC;
+  background-color: #fff;
+  border: 1px solid #0B76BC;
 }
 
 .clients .swiper-slide img {
